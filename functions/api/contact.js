@@ -19,6 +19,8 @@ export async function onRequestPost({ request, env }) {
   const phone = String(data.phone || "").trim().slice(0, 40);
   const service = String(data.service || "").trim().slice(0, 120);
   const message = String(data.message || "").trim().slice(0, 4000);
+  const marketingEmail = data.marketing_email === "yes";
+  const submittedAt = new Date().toISOString();
 
   if (!name || !email || !service || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json(400, { error: "Please complete the required fields with a valid email address." });
@@ -34,7 +36,10 @@ export async function onRequestPost({ request, env }) {
     `Service: ${service}`,
     "",
     "Project details:",
-    message
+    message,
+    "",
+    `FS Nexus email marketing consent: ${marketingEmail ? "YES" : "NO"}`,
+    `Enquiry submitted (UTC): ${submittedAt}`
   ].join("\n");
 
   const sent = await fetch("https://api.resend.com/emails", {
