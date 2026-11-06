@@ -11,3 +11,38 @@
 @media(max-width:1250px){.section{padding-left:6.5%;padding-right:6.5%}.about{gap:55px}}
 @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:75px;padding-bottom:50px}.hero-visual{height:350px;margin-top:35px}.service-grid{grid-template-columns:repeat(2,1fr)}.section-heading{display:block}.section-intro{margin-top:22px}.about{grid-template-columns:1fr;gap:45px}.contact-section{grid-template-columns:1fr;gap:35px}.statement{grid-template-columns:55px 1fr}.statement-mark{font-size:75px}}
 @media(max-width:600px){.site-header{height:70px;padding:0 6%}.menu-toggle{display:block}.nav{display:none;position:absolute;top:69px;left:0;right:0;background:#0b1220;padding:20px 6% 25px;flex-direction:column;align-items:stretch;gap:20px;border-top:1px solid var(--line)}.nav.open{display:flex}.nav-cta{text-align:center}.announcement{font-size:8px}.hero{padding-left:6%;padding-right:6%;min-height:auto}.hero h1{font-size:51px}.hero-copy{font-size:14px}.hero-actions{align-items:flex-start;flex-direction:column;gap:19px}.hero-foot{margin-top:48px}.hero-visual{height:290px;transform:scale(.83);margin:-5px -25px 0}.node{font-size:7px;padding:8px}.node-a{left:8%}.node-b{right:-2%}.node-c{left:-4%}.node-d{right:5%}.trust-strip{gap:10px;flex-wrap:wrap;font-size:7px;padding:17px 8px}.trust-strip i{width:3px;height:3px}.section{padding:75px 6%}.section-heading h2,.about-copy h2{font-size:37px}.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.service-card>p:not(.card-number){min-height:0}.statement{padding:65px 6%;grid-template-columns:35px 1fr;gap:12px}.statement-mark{font-size:55px}.statement h2{font-size:32px}.about-panel{min-height:320px;padding:17px}.panel-graphic{height:235px}.panel-ring{width:190px;height:190px}.panel-word{font-size:19px}.contact-section{padding:70px 6%;gap:28px}.contact-copy h2{font-size:46px}.contact-form{padding:22px 17px}.form-row{grid-template-columns:1fr;gap:18px}.form-foot{align-items:flex-start;flex-direction:column;gap:12px}.footer{padding:24px 6%;gap:18px;flex-wrap:wrap}.footer>span{order:3;width:100%}}
+.contact-phone {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contact-phone p {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: #54708f;
+  margin: 0 0 5px;
+}
+
+.contact-phone a {
+  font: 700 20px var(--display);
+  color: #14243a;
+}
+
+.contact-phone a:hover,
+.footer-phones a:hover {
+  color: var(--blue);
+}
+
+.footer-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-phones a {
+  color: #c4cedb;
+  font-size: 11px;
+}
