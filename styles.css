@@ -46,3 +46,7 @@
   color: #c4cedb;
   font-size: 11px;
 }
+.contact-phone a {
+  display: block;
+  width: fit-content;
+}
