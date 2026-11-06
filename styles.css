@@ -50,3 +50,36 @@
   display: block;
   width: fit-content;
 }
+.marketing-consent {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start;
+  gap: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1.6;
+}
+
+.marketing-consent input[type="checkbox"] {
+  width: 16px;
+  min-width: 16px;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.marketing-consent span {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.privacy-notice {
+  margin: 0;
+  font-size: 9px;
+  color: #8491a1;
+}
+
+.contact-form a,
+.footer a[href="/privacy.html"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
