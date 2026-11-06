@@ -92,6 +92,10 @@
         <div class="form-row"><label>Email address<input type="email" name="email" autocomplete="email" required maxlength="254" placeholder="you@company.com"></label><label>Telephone<input type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="Phone (optional)"></label></div>
         <label>What can we help with?<select name="service" required><option value="" disabled selected>Select a service</option><option>Business networking</option><option>Connectivity (fibre / 4G / 5G / Starlink)</option><option>CCTV and access control</option><option>Business communications / VoIP</option><option>Multiple services / wider project</option><option>Something else</option></select></label>
         <label>Tell us a little about your project<textarea name="message" rows="4" required maxlength="4000" placeholder="A few details about what you need..."></textarea></label>
+        <label class="marketing-consent">
+          <input type="checkbox" name="marketing_email" value="yes">
+          <span>I'd like to receive occasional emails about FS Nexus services, updates and offers. I can unsubscribe at any time.</span>
+        </label>
         <div class="form-foot"><button class="button button-primary" type="submit">Send enquiry <span>↗</span></button><span id="form-status" role="status" aria-live="polite">Your details are only used to respond to your enquiry.</span></div>
         <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       </form>
